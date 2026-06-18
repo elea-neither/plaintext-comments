@@ -7,5 +7,5 @@
             "match": "#.*$"
         }
     ],
-    "scopeName": "text.plaintext.comments" // Must match the scopeName in package.json
+    "scopeName": "text.plaintext.comments"
 }

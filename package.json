@@ -1,20 +1,24 @@
 {
-  "name": "plaintext-comments",
-  "displayName": "Plain Text Comments",
-  "description": "Support for toggling comments in plaintext files.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.125.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  // Extends buitin "plaintext" language:  See [Syntax Highlight Guide | Visual Studio Code Extension API](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#developing-a-new-grammar-extension)
-  "contributes": {
-    "grammars": [{
-      "language": "plaintext", // Use the target language's information
-      "scopeName": "text.plaintext.comments", // Must match the scopeName in the .tmLanguage.json file
-      "path": "./syntaxes/plaintext.tmLanguage.json"
-    }]
+    "name": "plaintext-comments",
+    "displayName": "Plain Text Comments",
+    "description": "Support for toggling comments in plaintext files.",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.125.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "contributes": {
+      "languages": [{
+        "id": "plaintext",
+        "configuration": "./language-configuration.json"
+      }],
+      "grammars": [{
+        "language": "plaintext",
+        "scopeName": "text.plaintext.comments",
+        "path": "./syntaxes/plaintext.tmLanguage.json"
+      }]
+    }
   }
-}
+  
