@@ -1,0 +1,25 @@
+{
+  "name": "plaintext-comments",
+  "displayName": "Plain Text Comments",
+  "description": "Support for toggling comments in plaintext files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "plaintext",
+      "aliases": ["Plain Text +", "plaintext"],
+      "extensions": [".txt",".conf",".paths",""],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "plaintext",
+      "scopeName": "plaintext.plus",
+      "path": "./syntaxes/plaintext.tmLanguage.json"
+    }]
+  }
+}
