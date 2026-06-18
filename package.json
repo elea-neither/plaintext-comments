@@ -3,22 +3,35 @@
     "displayName": "Plain Text Comments",
     "description": "Support for toggling comments in plaintext files.",
     "version": "0.0.1",
+    "publisher": "elea-neither",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elea-neither/plaintext-comments.git"
+    },
     "engines": {
-      "vscode": "^1.125.0"
+        "vscode": "^1.125.0"
     },
     "categories": [
-      "Programming Languages"
+        "Programming Languages"
+    ],
+    "keywords": [
+        "plaintext",
+        "plain",
+        "comments"
     ],
     "contributes": {
-      "languages": [{
-        "id": "plaintext",
-        "configuration": "./language-configuration.json"
-      }],
-      "grammars": [{
-        "language": "plaintext",
-        "scopeName": "text.plaintext.comments",
-        "path": "./syntaxes/plaintext.tmLanguage.json"
-      }]
+        "languages": [
+            {
+                "id": "plaintext",
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "plaintext",
+                "scopeName": "text.plaintext.comments",
+                "path": "./syntaxes/plaintext.tmLanguage.json"
+            }
+        ]
     }
-  }
-  
+}
