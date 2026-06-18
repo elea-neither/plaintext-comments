@@ -9,10 +9,11 @@
   "categories": [
     "Programming Languages"
   ],
+  // Extends buitin "plaintext" language:  See [Syntax Highlight Guide | Visual Studio Code Extension API](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#developing-a-new-grammar-extension)
   "contributes": {
     "grammars": [{
-      "language": "plaintext",
-      "scopeName": "plaintext.plus",
+      "language": "plaintext", // Use the target language's information
+      "scopeName": "text.plaintext.comments", // Must match the scopeName in the .tmLanguage.json file
       "path": "./syntaxes/plaintext.tmLanguage.json"
     }]
   }

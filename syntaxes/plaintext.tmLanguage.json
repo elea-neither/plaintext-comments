@@ -1,11 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "Plain Text +",
+    "name": "Plain Text Comments",
     "patterns": [
         {
             "name": "comment.line.number-sign.plaintext",
             "match": "#.*$"
         }
     ],
-    "scopeName": "plaintext.plus"
+    "scopeName": "text.plaintext.comments" // Must match the scopeName in package.json
 }
