@@ -10,12 +10,6 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "plaintext",
-      "aliases": ["Plain Text +", "plaintext"],
-      "extensions": [".txt",".conf",".paths",""],
-      "configuration": "./language-configuration.json"
-    }],
     "grammars": [{
       "language": "plaintext",
       "scopeName": "plaintext.plus",
